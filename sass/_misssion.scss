@@ -1,0 +1,32 @@
+.mission {
+    margin-top: 10px;
+    padding: 10px;
+
+    &__title {
+        @include section-title;
+    }
+
+    .slider {
+        margin-top: 10px;
+
+        div {
+            position: relative;
+        }
+
+        &__img {
+            max-width: 325px;
+        }
+
+        &__text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #faebd79c;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+    }
+}
