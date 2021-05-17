@@ -6,6 +6,25 @@ header {
             display: block;
             margin: 0 auto;
             max-width: 300px;
+
+            @include common {
+                display: none;
+            }
+
+        }
+
+        &__img-baner {
+            display: none;
+            max-width: 80vw;
+            margin: 0 auto;
+
+            @include common {
+                display: block;
+            }
+
+            @include ipadPro {
+                max-width: 700px;
+            }
         }
 
     }

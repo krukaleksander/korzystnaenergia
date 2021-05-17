@@ -7,6 +7,77 @@ cursive;
 $blue-color: rgb(37, 161, 198);
 $green-color: rgb(67, 155, 19);
 
+@mixin section-title {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    color: $blue-color;
+}
+
+$ipadPro: 1023px;
+$iphoneXl: 830px;
+$ipad: 768px;
+$iphone6l: 670px;
+$iphoneX: 600px;
+$common: 530px;
+
+
+@mixin iphoneX {
+    @media (min-width: #{$iphoneX}) {
+        @content
+    }
+}
+
+;
+
+@mixin iphoneXl {
+    @media (min-width: #{$iphoneXl}) {
+        @content
+    }
+}
+
+;
+
+@mixin ipad {
+    @media (min-width: #{$ipad}) {
+        @content
+    }
+}
+
+;
+
+@mixin ipadPro {
+    @media (min-width: #{$ipadPro}) {
+        @content
+    }
+}
+
+;
+
+@mixin iphone6l {
+    @media (min-width: #{$iphone6l}) {
+        @content
+    }
+}
+
+;
+
+@mixin common {
+    @media (min-width: #{$common}) {
+        @content
+    }
+}
+
+;
+
+@mixin commonPort {
+    @media (min-width: #{$common}) and (orientation: portrait) {
+        @content
+    }
+}
+
+;
 
 * {
     margin: 0;
@@ -16,17 +87,25 @@ $green-color: rgb(67, 155, 19);
 
 body {
     font-family: $content-font;
+
+    @include ipadPro {
+        background: url('../img/lisc.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
 }
 
 .wrapper {
     max-width: 100%;
     overflow: hidden;
-}
+    background-color: white;
 
-@mixin section-title {
-    text-align: center;
-    font-size: 30px;
-    padding-bottom: 10px;
-    letter-spacing: 5px;
-    color: $blue-color;
+    @include ipadPro {
+        padding: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-shadow: 0px 17px 25px #aaeeaa;
+    }
 }

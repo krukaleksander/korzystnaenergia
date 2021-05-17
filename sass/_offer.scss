@@ -1,17 +1,32 @@
 .our-offer {
+    @include common {
+        padding: 20px;
+    }
 
     .offer-container {
         display: flex;
         padding: 10px;
 
+        @include common {
+            padding: 2px;
+        }
+
         &__icon {
             width: 25px;
             margin-right: 5px;
+
+            @include ipadPro {
+                width: 50px;
+            }
         }
 
         &__description {
             letter-spacing: 1px;
             align-self: center;
+
+            @include ipadPro {
+                font-size: 25px;
+            }
         }
     }
 
@@ -19,6 +34,14 @@
         padding: 10px;
         letter-spacing: 1px;
         text-align: center;
+
+        p {
+            @include ipadPro {
+                font-size: 25px;
+                max-width: 700px;
+                margin: 10px auto;
+            }
+        }
 
         div {
             margin-top: 20px;
@@ -36,6 +59,18 @@
                 font-size: 15px;
                 position: relative;
 
+                @include common {
+                    width: 300px;
+                    margin: 0 auto;
+                }
+
+                @include ipadPro {
+                    width: 400px;
+                    height: 85px;
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+
                 img {
                     position: absolute;
                     max-width: 23px;
@@ -47,6 +82,10 @@
             span {
                 color: #848383;
                 font-size: 15px;
+
+                @include ipadPro {
+                    font-size: 25px;
+                }
             }
         }
     }
