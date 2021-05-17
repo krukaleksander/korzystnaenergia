@@ -8,9 +8,26 @@
 
     .slider {
         margin-top: 10px;
+        overflow: hidden;
+
+        figure {
+            position: relative;
+            width: 400%;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 30s slidy infinite both;
+        }
 
         div {
+            float: left;
             position: relative;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
         }
 
         &__img {
@@ -28,5 +45,43 @@
             padding: 10px;
         }
 
+    }
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
     }
 }
