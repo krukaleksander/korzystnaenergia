@@ -1,0 +1,18 @@
+.about {
+
+    &__title {
+        @include section-title;
+    }
+
+    &__div {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__plug {
+        width: 30px;
+        margin-right: 10px;
+    }
+}

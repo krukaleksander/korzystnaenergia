@@ -17,7 +17,7 @@
             left: 0;
             text-align: left;
             font-size: 0;
-            animation: 30s slidy infinite both;
+            animation: 15s slidy infinite both;
         }
 
         div {
@@ -43,6 +43,7 @@
             width: 100%;
             text-align: center;
             padding: 10px;
+            font-size: 18px;
         }
 
     }
@@ -53,35 +54,63 @@
         left: 0%;
     }
 
-    20% {
+    25% {
         left: 0%;
     }
 
-    25% {
-        left: -100%;
-    }
-
-    45% {
+    30% {
         left: -100%;
     }
 
     50% {
-        left: -200%;
+        left: -100%;
     }
 
-    70% {
+    55% {
         left: -200%;
     }
 
     75% {
-        left: -300%;
+        left: -200%;
     }
 
-    95% {
+    80% {
         left: -300%;
     }
 
     100% {
-        left: -400%;
+        left: -300%;
     }
+
+    // 0% {
+    //     left: 0%;
+    // }
+
+    // 20% {
+    //     left: 0%;
+    // }
+
+    // 25% {
+    //     left: -100%;
+    // }
+
+    // 45% {
+    //     left: -100%;
+    // }
+
+    // 50% {
+    //     left: -200%;
+    // }
+
+    // 70% {
+    //     left: -200%;
+    // }
+
+    // 75% {
+    //     left: -300%;
+    // }
+
+    // 100% {
+    //     left: -300%;
+    // }
 }

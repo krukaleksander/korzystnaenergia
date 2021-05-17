@@ -1,0 +1,22 @@
+.company-info {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #4CAF50;
+    width: 90%;
+    margin: 0 auto;
+
+    &__title {
+        @include section-title;
+    }
+
+    &__name {
+        letter-spacing: 1px;
+        padding: 10px;
+    }
+
+    h4 {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+}
