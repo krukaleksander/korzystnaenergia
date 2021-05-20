@@ -1,0 +1,64 @@
+.contact {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+
+    &__header {
+        padding: 1.5em 2.5em;
+        border-bottom: 1px solid #ccc;
+        background: url('../img/contactHeader.jpg') left -80px;
+        color: #fff;
+        width: 100%;
+        margin: 0 0 1em 0;
+
+        h1 {
+            display: inline-block;
+            font-weight: 100;
+            font-size: 35px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            margin: 0 0 0.1em 0;
+            padding: 0 0 0.4em 0;
+        }
+    }
+
+    &__input {
+        margin: 0 0 0.5em 0;
+        border: 1px solid #ccc;
+        padding: 6px 10px;
+        color: #555;
+        font-size: 1em;
+        width: 80%;
+    }
+
+    &__textarea {
+        border: 1px solid #ccc;
+        padding: 6px 10px;
+        width: 100%;
+        color: rgb(85, 85, 85);
+        width: 80%;
+    }
+
+    &__button {
+        background: none;
+        border: 1px solid;
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-top: 10px;
+
+        &--send {
+            color: rgb(5, 130, 3);
+        }
+
+        &--cancel {
+            color: rgb(231, 131, 165);
+        }
+    }
+}

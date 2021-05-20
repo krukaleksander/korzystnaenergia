@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script defer src="./js/main.js"></script>
     <div class="wrapper">
         <header>
             <div class="logo">
@@ -34,9 +35,27 @@
                 <div class="our-offer__summary">
                     <p>Nasz przedstawiciel przyjedzie do Ciebie wykonać darmowy audyt energetyczny.</p>
                     <div>
-                        <button>umów spotkanie <img src="./img/lisc.png" alt="lisc"></button>
+                        <button id='openContactForm'>umów spotkanie <img src="./img/lisc.png" alt="lisc"></button>
                         <span>* online lub u Ciebie w firmie</span>
                     </div>
+                </div>
+            </section>
+            <section class='contact'>
+                <div class="contact__header">
+                    <h1>kontakt</h1>
+                    <h3>Odezwiemy się tak szybko jak się da!</h3>
+                </div>
+                <input class='contact__input contact__reset-border' type="text" placeholder='Imię i naziwsko'
+                    id='clientName'>
+                <input class='contact__input contact__reset-border' type="text" placeholder='Telefon' id='clientPhone'>
+                <input class='contact__input contact__reset-border' type="text" placeholder='adres email'
+                    id='clientEmail'>
+                <textarea class='contact__textarea contact__reset-border' name="messae" id="clientMessage" cols="27"
+                    rows="10" placeholder="treść wiadomości"></textarea>
+                <p class="contact__feedback"></p>
+                <div>
+                    <button class='contact__button contact__button--cancel'>Anuluj</button>
+                    <button class='contact__button contact__button--send'>Wyślij</button>
                 </div>
             </section>
             <section class="mission">
@@ -86,9 +105,6 @@
                         sytuacji.</p>
                 </div>
             </section>
-            <!-- <section class="contact">
-                <div>Formularz kontaktowy</div>
-            </section> -->
             <section class="company-info">
                 <h2 class="company-info__title">Dane firmy: </h2>
                 <h3 class="company-info__name">ENERGY2021 Sp. Z O.O.</h3>

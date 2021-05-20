@@ -4,6 +4,10 @@
 
     &__title {
         @include section-title;
+
+        @include ipadPro {
+            font-size: 40px;
+        }
     }
 
     .slider {
@@ -28,6 +32,10 @@
             justify-content: center;
             align-items: center;
             height: 250px;
+
+            @include ipadPro {
+                height: 500px;
+            }
         }
 
         &__img {
@@ -44,6 +52,10 @@
             text-align: center;
             padding: 10px;
             font-size: 18px;
+
+            @include ipadPro {
+                font-size: 40px;
+            }
         }
 
     }
