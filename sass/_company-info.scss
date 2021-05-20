@@ -7,16 +7,28 @@
 
     &__title {
         @include section-title;
+
+        @include ipadPro {
+            font-size: 40px;
+        }
     }
 
     &__name {
         letter-spacing: 1px;
         padding: 10px;
+
+        @include ipadPro {
+            font-size: 30px;
+        }
     }
 
     h4 {
         font-size: 18px;
         padding: 5px;
+
+        @include ipadPro {
+            font-size: 25px;
+        }
     }
 
 }
