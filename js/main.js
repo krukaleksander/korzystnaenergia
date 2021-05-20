@@ -23,12 +23,22 @@ function cleanForm() {
 
 openContactFormBtn.addEventListener('click', () => {
     contactForm.style.display = 'flex';
+    contactForm.scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest"
+    });
 });
 
 hideContactFormBtn.addEventListener('click', () => {
     getActualFormData();
     cleanForm();
     contactForm.style.display = 'none'
+    document.querySelector('.logo__img-baner').scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest"
+    });
 });
 
 
