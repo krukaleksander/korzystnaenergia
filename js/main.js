@@ -56,13 +56,14 @@ sendContactFormBtn.addEventListener('click', () => {
         data.append("clientMessage", clientMessage.value);
 
 
-        fetch(`http://localhost:5000/send-energy-msg`, {
+        fetch(`https://energy2000.herokuapp.com/send-energy-msg`, {
                 method: 'post',
                 body: data,
-                mode: "no-cors",
+                // mode: "no-cors",
             })
             .then(response => response.text())
             .then(text => contactFeedback.innerHTML = text)
+            .then(() => cleanForm())
             .catch(err => contactFeedback.innerHTML = err);
 
     }
